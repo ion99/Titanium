@@ -69,7 +69,7 @@ var xhr = Ti.Network.createHTTPClient({
         var res = JSON.parse(this.responseText);
         console.log("JSON array LENGTH ", res.items.length); 
         console.log("JSON array ", res.items);
-        console.log("The url: ", res.items[0].pagemap["cse_thumbnail"][0].src);
+        
         alert('success');
         
         var listView = Ti.UI.createListView({
