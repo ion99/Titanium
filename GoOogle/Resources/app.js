@@ -2,12 +2,21 @@ var window = Ti.UI.createWindow({
     backgroundColor:'white',
 });
 
-var text1 = Ti.UI.createLabel({
-	text: 'GoOogle',
-	color: '#888',
-  	font: {fontSize:40, fontWeight:'bold'},
-  	top: 235
+// var text1 = Ti.UI.createLabel({
+// 	text: 'GoOogle',
+// 	color: '#888',
+//   	font: {fontSize:40, fontWeight:'bold'},
+//   	top: 235
+// });
+
+var image = Ti.UI.createImageView({
+    image:'/assets/images/google-logo.png',
+    width: 140,
+    height: 135,
+    top: 215
 });
+
+window.add(image);
 
 var search = Ti.UI.createSearchBar({
     barColor:'#00BFFF',
