@@ -39,12 +39,20 @@ search.addEventListener('return', function (event) {
  		title:'New View',
  		barColor:'black'
  	});
- 	var text2 = Ti.UI.createLabel({
-		text: 'GoOogle',
-		color: '#888',
-  		font: {fontSize:30, fontWeight:'bold'},
-  		top: 20
-	});
+
+ 	//var text2 = Ti.UI.createLabel({
+	//	text: 'GoOogle',
+	//	color: '#888',
+  	//	font: {fontSize:30, fontWeight:'bold'},
+  	//	top: 20
+	//});
+
+    var image1 = Ti.UI.createImageView({
+        image:'/assets/images/google-logo.png',
+        width: 110,
+        height: 110,
+        top: 5
+    });
 
 	var search1 = Ti.UI.createTextField({
     	color:'#00BFFF',
@@ -117,7 +125,8 @@ xhr.send();  // request is actually sent with this statement
 		
 	});
 	
- 	w.add(text2);
+    //w.add(text2);
+ 	w.add(image1);
  	w.add(search1);
  	window.add(w);
  	 	
