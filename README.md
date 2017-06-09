@@ -1,2 +1,3 @@
 # Titanium
-My first Titatnium Appcelerator app
+
+My first Titanium Appcelerator app
